@@ -4,7 +4,7 @@ function App() {
 
   return (
       <div>
-       Game of life
+       The game of life
       </div>
      
   )
