@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import './App.css'
-
+import { StarsBackground } from './background'
 function App() {
   const canvasRef = useRef(null)
 
@@ -23,11 +23,12 @@ function App() {
   }, [])
 
   return (
-    <main>
+    <main className='main'>
       <div>The game of life</div>
       <div>
         <canvas ref={canvasRef} width="1100" height="600" />
       </div>
+      <StarsBackground/>
     </main>
   )
 }
